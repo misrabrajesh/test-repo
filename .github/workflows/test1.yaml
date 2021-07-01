@@ -16,7 +16,7 @@ jobs:
         run: |
           node -v
           npm -v
-     - name: python command:
+      - name: python command:
         run: !
           import plateform
           print (plateform.processor())
