@@ -1,15 +1,21 @@
-name: Actions commands
-
-
-
+name: Actions workflow
 on: [push]
-
-
-
 jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
+      - name: List Fiels
+        run: |
+          pwd
+          ls -a
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKSPACE
+          echo "{{github.token}}"
+
+      - name: Checkout
+        uses: actions/Checkout@v2.3.4
+
       - name: Simple JS Action
         id: greet
         uses: actions/hello-world-javascript-action@v1
