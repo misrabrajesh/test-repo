@@ -8,6 +8,7 @@ jobs:
         run: |
           pwd
           ls -a
+          ls -altr
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
           echo $GITHUB_WORKSPACE
