@@ -3,15 +3,13 @@ on:
   
   schedule:
     - cron: '0/5 * * * *'
- 
+
 jobs:
-  run-task-actions:
+  run-github-actions:
     runs-on: ubuntu-latest
     steps:
-      - name: List Files
+      - name: List Fiels
         run: |
           pwd
-          date
           ls -a
           ls -altr
-          df -h
