@@ -14,3 +14,4 @@ jobs:
           date
           ls -a
           ls -altr
+          df -h
