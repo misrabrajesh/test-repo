@@ -1,0 +1,15 @@
+name: Task workflow
+on: 
+  
+  schedule:
+    - cron: '0/5 * * * *'
+
+jobs:
+  run-github-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List Fiels
+        run: |
+          pwd
+          ls -a
+          ls -altr
