@@ -5,10 +5,10 @@ on:
     - cron: '0/5 * * * *'
  
 jobs:
-  run-github-actions:
+  run-task-actions:
     runs-on: ubuntu-latest
     steps:
-      - name: List Fiels
+      - name: List Files
         run: |
           pwd
           date
