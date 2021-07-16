@@ -1,4 +1,4 @@
-name: Actions workflow
+name: Task workflow
 on: 
   
   schedule:
